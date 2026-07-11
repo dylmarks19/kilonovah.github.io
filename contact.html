@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Kilonova Holdings</title>
+<meta name="description" content="Get in touch with Kilonova Holdings.">
+<link rel="icon" href="assets/kilonova-emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__row">
+    <a href="index.html" class="brand">
+      <img src="assets/kilonova-emblem.png" alt="" class="brand__mark">
+      <span class="brand__word">Kilonova<span>HOLDINGS</span></span>
+    </a>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="container" style="padding-top:4rem;">
+    <span class="eyebrow">Contact</span>
+    <h1 style="max-width:16ch;">Talk to us.</h1>
+    <p class="hero__lede">Whether you're a business owner exploring a partnership, or an operating company under Kilonova with something to raise — get in touch.</p>
+  </section>
+
+  <section class="container">
+    <div class="contact-grid">
+      <form action="https://formsubmit.co/YOUR-EMAIL@example.com" method="POST">
+        <!-- TODO: replace the address above with your real inbox, or swap this
+             for whatever form backend you prefer. formsubmit.co needs no
+             backend/server but does require you to confirm the email once. -->
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="company">Company (optional)</label>
+          <input id="company" name="company" type="text">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+
+      <div>
+        <dl class="contact-details">
+          <dt>Email</dt>
+          <dd>hello@kilonovaholdings.co.za</dd>
+          <!-- TODO: confirm real address -->
+
+          <dt>Base</dt>
+          <dd>Mpumalanga, South Africa</dd>
+          <!-- TODO: confirm whether you want a physical address listed -->
+
+          <dt>Holdings</dt>
+          <dd>Easysmith (Pty) Ltd</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer container">
+  <div class="site-footer__row">
+    <span class="site-footer__legal">&copy; <span data-year></span> Kilonova Holdings (Pty) Ltd. All rights reserved.</span>
+    <nav>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
