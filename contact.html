@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Kilonova Holdings</title>
+<meta name="description" content="Get in touch with Kilonova Holdings.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kilonova Holdings">
+<meta property="og:title" content="Contact — Kilonova Holdings">
+<meta property="og:description" content="Get in touch with Kilonova Holdings.">
+<meta property="og:url" content="https://dylmarks19.github.io/contact.html">
+<meta property="og:image" content="https://dylmarks19.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kilonova Holdings">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — Kilonova Holdings">
+<meta name="twitter:description" content="Get in touch with Kilonova Holdings.">
+<meta name="twitter:image" content="https://dylmarks19.github.io/assets/og-image.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#2C1F63">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__row">
+    <a href="index.html" class="brand">
+      <img src="assets/kilonova-lockup.png" alt="Kilonova Holdings" class="brand__lockup">
+    </a>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="container" style="padding-top:4rem;">
+    <span class="eyebrow">Contact</span>
+    <h1 style="max-width:16ch;">Talk to us.</h1>
+    <p class="hero__lede">Whether you're a business owner exploring a partnership, or an operating company under Kilonova with something to raise — get in touch.</p>
+  </section>
+
+  <section class="container">
+    <div class="contact-grid">
+      <form action="https://formsubmit.co/dylan@kilonovah.com" method="POST">
+        <!-- formsubmit.co needs no backend/server, but it does require you to
+             confirm the email address once (check dylan@kilonovah.com for a
+             confirmation link after your first real test submission). -->
+        <input type="hidden" name="_subject" value="New enquiry — Kilonova Holdings site">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://dylmarks19.github.io/thanks.html">
+        <!-- honeypot: hidden from real visitors, bots tend to fill every field
+             they find. If this arrives non-empty, formsubmit silently drops it. -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="company">Company (optional)</label>
+          <input id="company" name="company" type="text">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+
+      <div>
+        <dl class="contact-details">
+          <dt>Email</dt>
+          <dd class="contact-email-row">
+            <a href="mailto:dylan@kilonovah.com">dylan@kilonovah.com</a>
+            <button type="button" class="copy-btn" data-copy="dylan@kilonovah.com">Copy</button>
+          </dd>
+
+          <dt>Base</dt>
+          <dd>Pretoria, South Africa</dd>
+
+          <dt>Holdings</dt>
+          <dd data-holdings-list>Easysmith (Pty) Ltd</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer container">
+  <div class="site-footer__row">
+    <span class="site-footer__legal">&copy; <span data-year></span> Kilonova Holdings (Pty) Ltd. All rights reserved.</span>
+    <nav>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="holdings/_registry.js"></script>
+<script src="holdings/easysmith.js"></script>
+<script src="render-holdings.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
